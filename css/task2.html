@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .logo-container {
+            width: 10%;
+            margin-left: 20px;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card-container {
+            background-color: #fff;
+            width: 310px;
+            height: 450px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .card-container h1 {
+            font-size: 24px;
+        }
+
+        .card-container p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: 1px solid gray;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .end-text {
+            position: absolute;
+            right: -50px;
+            bottom: 20px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .link {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signBtn1,
+        .signBtn2 {
+            border-radius: 50px;
+            width: 280px;
+            height: 50px;
+        }
+
+        .or-divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .or-divider hr {
+            width: 42%;
+        }
+
+        .footer-container {
+            text-align: center;
+            color: gray;
+            padding: 10px 0;
+        }
+
+        .footer-container ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-container ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer-container ul li img {
+            width: 60px;
+        }
+
+        #end-text {
+            position: absolute;
+            left: 220px;
+            bottom: 20px;
+            color: blue;
+            cursor: pointer;
+        }
+
+        #img-logo {
+            width: 10%;
+            margin-left: 20px;
+        }
+#lastp{
+    padding-left: 20%;
+}
+    </style>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <img id="img-logo" src="Linkedin.png" alt="LinkedIn Logo">
+    <main class="center-container">
+        <div class="card-container">
+            <h1>Sign in</h1>
+            <p>Stay updated on your professional world</p>
+            <form action="">
+                <div class="input-container">
+                    <input type="text" name="emailOrPhone" id="input1" placeholder="Email or Phone">
+                </div>
+                <div class="input-container">
+                    <input type="text" name="pws" id="input2" placeholder="Password">
+                    <a id="end-text" href="forgotPws.html" target="_blank" class="link">show</a>
+                </div>
+                <a href="forgotPws.html" target="_blank" class="link">Forgot password?</a>
+                <button type="button" class="btn btn-primary signBtn1">Sign in</button>
+                <div class="or-divider">
+                    <hr>
+                    <span>or</span>
+                    <hr>
+                </div>
+                <button type="button" class="btn btn-light signBtn2">
+                    <i class="fa fa-apple" aria-hidden="true"></i> Sign in with Apple
+                </button>
+                <p id="lastp">New to LinkedIn? <a href="join.html" class="link">Join now</a></p>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="footer-container">
+        <ul>
+            <li><img src="Linkedin.png" alt="LinkedIn Logo">&copy; 2021</li>
+            <li>User Agreement</li>
+            <li>Privacy Policy</li>
+            <li>Community Guidelines</li>
+            <li>Cookie Policy</li>
+            <li>Copyright Policy</li>
+            <li>Send Feedback</li>
+            <li>Language</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

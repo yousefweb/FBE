@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task1</title>
+  <style>
+   table, th, td{
+          border: 1px solid;
+          border-color: gray;
+            width: 30%;
+            margin: 20px auto;
+            text-align: right;
+    }
+    .rowColor{
+      background-color: yellow;
+    }
+  #center-color{
+    text-align: center;
+    background-color: #f7b6c3;
+  }
+  #bold-center{
+    font-weight: bold;
+    text-align: center;
+  }
+  .left-text{
+    text-align: left;
+  }
+  .left-text2{
+    text-align: left;
+  }
+  caption {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid gray; 
+    }
+  </style>
+</head>
+<body>
+  <table>
+
+    <caption>Ninja Details</caption>
+    <tr class="rowColor">
+      <th>Name</th>
+      <th>Age</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+     <td id="center-color">Ninja A</td>
+     <td class="left-text">18</td>
+     <td class="left-text">B</td>
+    </tr>
+    <tr>
+      <td class="left-text2">Ninja B</td>
+      <td class="left-text2">23</td>
+      <td class="left-text2">C</td>
+     </tr>
+     <tr>
+      <td class="left-text2">Ninja C</td>
+      <td class="left-text2">22</td>
+      <td class="left-text2">A</td>
+     </tr>
+     <tr>
+      <td colspan="3" id="bold-center">Ninja C - the best learner!</td>
+     </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Task 4-part2</title>
+  <style>
+    body {
+      background-color: skyblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+
+    .custom-card {
+      background-color: white;
+      box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2),
+        0px 2px 4px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 0px 1px inset rgba(255, 255, 255, 0.05);
+      border-radius: 30px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    .custom-heading,
+    .custom-label {
+      color: rgb(41, 78, 148);
+    }
+
+
+    .custom-heading {
+      text-transform: uppercase;
+    }
+
+    .custom-input-container {
+      text-align: left;
+    }
+
+    .custom-input-container * {
+      margin: 10px 0;
+    }
+
+
+    .custom-input {
+      width: 100%;
+      border: 1px solid rgb(144, 214, 245);
+      border-radius: 10px;
+      height: 30px;
+    }
+
+    .L {
+      color: rgb(41, 78, 148);
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container custom-card">
+    <h1 class="custom-heading">codewithrandom</h1>
+    <p class="custom-label">Thank you for Being with me</p>
+    <form class="custom-input-container">
+      <label for="custom-name">Name</label>
+      <input type="text" name="custom-name" id="custom-name" class="custom-input">
+      <label class="L" for="custom-email">E-mail</label>
+      <input type="email" name="custom-email" id="custom-email" class="custom-input">
+      <label class="L" for="custom-password1">Password</label>
+      <input type="password" name="custom-password1" id="custom-password1" class="custom-input">
+      <label class="L" for="custom-password2">Repeat password</label>
+      <input type="password" name="custom-password2" id="custom-password2" class="custom-input">
+      <div class="text-center"> 
+        <button id="btn" type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
+<!--...........................................................................................................-->

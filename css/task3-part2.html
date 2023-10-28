@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Login</title>
+  <style>
+    * {
+      box-sizing: content-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(271, 76%, 53%);
+    }
+
+    .container {
+      border-radius: 10px;
+      background-color: aliceblue;
+      width: 30%;
+      height: 660px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    img {
+      display: inline;
+      margin: 0 auto;
+      height: 70%;
+      width: 70%;
+    }
+
+    .image-cropper {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .form {
+      width: 80%; 
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+
+    input {
+      background-color: rgb(226, 221, 221);
+      color: rgb(0, 0, 0);
+      margin: 10px;
+      border-radius: 20px;
+      padding: 15px;
+      width: 100%;
+    }
+
+    h1 {
+      margin: 10px;
+      font-size: 24px; 
+      font-weight: bold; 
+    }
+
+    p {
+      margin: 10px;
+    }
+
+    .btn {
+      margin:   12px;
+      border-radius: 20px;
+      padding: 10px;
+      width: 100%;
+      background-color: #258058; 
+      color: #fff; 
+      font-weight: bold; 
+      cursor: pointer;
+      transition: background-color 0.3s; 
+    }
+
+    .btn:hover {
+      background-color: #1c684e; 
+    }
+
+    .link {
+      text-decoration: none;
+      color: #258058; 
+    }
+
+    .link-solid-green {
+      text-decoration: none;
+      color: #258058;
+      font-weight: bold;
+    }
+
+    .end {
+      padding: 45px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-cropper">
+      <img src="photo2.PNG" alt="laptop">
+    </div>
+    <div class="form">
+      <h1>Member Login</h1>
+      <input type="email" class="form-control" placeholder="Email" disabled>
+      <input type="password" class="form-control" placeholder="Password" disabled>
+      <input class="btn" type="submit" value="Login">
+      <p class="forgot-password">Forgot <a class="link">username/password?</a></p>
+      <br><br>
+      <p><a class="link-solid-green">Create your account</a></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6-part4</title>
+    <style>
+      
+        .blackDiv {
+            background-color: black;
+            grid-column: 1/5;
+        }
+
+        .yellowDiv {
+          width: 120%;
+        padding-bottom: 100px;
+            background-color:rgba(255, 164, 26, 0.945);
+            grid-column: span 3;
+        }
+
+        .greenDiv {
+            background-color: green;
+            padding-bottom: 100px;
+
+        }
+
+        .blueDiv {
+            background-color: blue;
+            grid-column: 1/5;
+        }
+
+        .myStyle {
+            width: 100%;
+            height: 200px;
+        }
+
+        .DIV {
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+            grid-template-columns: repeat(4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="DIV">
+        <div class="blackDiv myStyle"></div>
+        <div class="yellowDiv myStyle"></div>
+        <div class="greenDiv myStyle"></div>
+        <div class="blueDiv myStyle"></div>
+    </div>
+</body>
+
+</html>
